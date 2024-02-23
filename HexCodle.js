@@ -1,7 +1,7 @@
-const menuIcon = document.querySelector('.menu-icon');
-const offScreenMenu = document.querySelector('.off-screen-menu');
+const osmMainIcon = document.querySelector('.osm-main-icon');
+const osmMain = document.querySelector('.osm-main');
 
-menuIcon.addEventListener('click', () => {
-    menuIcon.classList.toggle('active');
-    offScreenMenu.classList.toggle('active');
+osmMainIcon.addEventListener('click', () => {
+    osmMainIcon.classList.toggle('active');
+    osmMain.classList.toggle('active');
 })

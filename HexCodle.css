@@ -9,7 +9,7 @@
     min-height: 55px;
 }
 
-.off-screen-menu {
+.osm-main {
     background-color: aquamarine;
     height: 100vh;
     width: 100%;
@@ -44,11 +44,11 @@ li:hover {
     opacity: 0.5;
 }
 
-.off-screen-menu.active {
+.osm-main.active {
     left: 0px;
 }
 
-.menu-icon {
+.osm-main-icon {
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 5px;
@@ -58,12 +58,12 @@ li:hover {
     position: relative;
 }
 
-.menu-icon:hover {
+.osm-main-icon:hover {
     background-color: brown;
 }
 
-.menu-icon span {
-    height: 0.25rem;
+.osm-main-icon span {
+    height: 0.2rem;
     width: 80%;
     background-color: purple;
     border-radius: 25px;
@@ -74,24 +74,24 @@ li:hover {
     transition: .3s ease;
 }
 
-.menu-icon span:nth-child(1) {
+.osm-main-icon span:nth-child(1) {
     top: 25%;
 }
 
-.menu-icon span:nth-child(3) {
+.osm-main-icon span:nth-child(3) {
     top: 75%;
 }
 
-.menu-icon.active span:nth-child(1) {
+.osm-main-icon.active span:nth-child(1) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.menu-icon.active span:nth-child(2) {
+.osm-main-icon.active span:nth-child(2) {
     opacity: 0;
 }
 
-.menu-icon.active span:nth-child(3) {
+.osm-main-icon.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
@@ -100,5 +100,5 @@ h1 {
     margin: 0;
     text-align: center;
     vertical-align: middle;
-    line-height: 3rem;
+    line-height: 3.5rem;
 }
