@@ -102,3 +102,13 @@ h1 {
     vertical-align: middle;
     line-height: 3.5rem;
 }
+
+.osm-stats-icon, .osm-settings-icon {
+        background-color: brown;
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 0.5rem;
+        border-radius: 5px;
+        float: right;
+        position: relative;
+}
