@@ -27,7 +27,7 @@
 }
 
 .osm-main-icon:hover, .osm-stats-icon:hover, .osm-rules-icon:hover, .osm-settings-icon:hover {
-    background-color: blueviolet;
+    background-color: green;
 }
 
 .osm-main, .osm-stats, .osm-rules, .osm-settings {
