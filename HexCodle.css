@@ -10,7 +10,8 @@
 }
 
 .page-title {
-    margin: auto;
+    margin-right: 1.1rem;
+    margin-left: 0.7rem;
 }
 
 .osm-main-icon, .osm-stats-icon, .osm-rules-icon, .osm-settings-icon {
@@ -24,6 +25,10 @@
 
 .osm-main-icon {
     float: left;
+}
+
+.osm-rules-icon {
+    margin-left: auto;
 }
 
 .osm-main-icon:hover, .osm-stats-icon:hover, .osm-rules-icon:hover, .osm-settings-icon:hover {
