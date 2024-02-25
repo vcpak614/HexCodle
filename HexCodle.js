@@ -29,6 +29,14 @@ osmMainIcon.addEventListener('click', () => {
     osmMain.classList.toggle('active');
 })
 
+osmStatsIcon.addEventListener('click', () => {
+    osmStats.classList.toggle('active');
+})
+
+osmSettingsIcon.addEventListener('click', () => {
+    osmSettings.classList.toggle('active');
+})
+
 //FUNCTIONS
 
 //currently unused/in progress

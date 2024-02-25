@@ -39,20 +39,35 @@
     background-color: aqua;
     width: 200px;
     height: 100vh;
+    padding-left: 1rem;
     position: fixed;
     top: 3.5rem;
-    left: -200px;
+    right: -200px;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     transition: 0.3s ease;
 }
 
 .osm-main.active, .osm-stats.active, .osm-rules.active, .osm-settings.active {
-    left: 0;
+    right: 0;
+}
+
+.osm-main {
+    padding-top: 1rem;
+    left: -200px;
+}
+
+.osm-main.active {
+    left: 0px;
 }
 
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.theme-option {
+    display: block;
 }
