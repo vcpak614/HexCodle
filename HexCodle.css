@@ -35,7 +35,7 @@
     background-color: green;
 }
 
-.osm-main, .osm-stats, .osm-rules, .osm-settings {
+.osm-main, .osm-stats, .osm-settings {
     background-color: aqua;
     width: 200px;
     height: 100vh;
@@ -49,7 +49,7 @@
     transition: 0.3s ease;
 }
 
-.osm-main.active, .osm-stats.active, .osm-rules.active, .osm-settings.active {
+.osm-main.active, .osm-stats.active, .osm-settings.active {
     right: 0;
 }
 

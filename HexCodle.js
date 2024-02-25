@@ -17,38 +17,48 @@ const osmSettingsIcon = document.querySelector('.osm-settings-icon');
 var settingsToggle = false;
 
 var toggleList = [osmMain, osmRules, osmStats, osmSettings];
-var toggleDict = {};
-toggleDict[osmMain] = mainToggle;
-toggleDict[osmRules] = rulesToggle;
-toggleDict[osmStats] = statsToggle;
-toggleDict[osmSettings] = settingsToggle;
+var toggleDict = new Map([
+    [osmMain, mainToggle],
+    [osmRules, rulesToggle],
+    [osmStats, statsToggle],
+    [osmSettings, settingsToggle]
+])
+
+console.log(toggleDict.get(osmMain));
+console.log(toggleDict.get(osmRules));
+console.log(toggleDict.get(osmStats));
+console.log(toggleDict.get(osmSettings));
 
 //FUNCTIONALITY
 
-osmMainIcon.addEventListener('click', () => {
-    osmMain.classList.toggle('active');
-})
+osmMainIcon.addEventListener('click', function() {
+    menuToggle(osmMain);
+});
 
-osmStatsIcon.addEventListener('click', () => {
-    osmStats.classList.toggle('active');
-})
+osmRulesIcon.addEventListener('click', function() {
+    menuToggle(osmRules);
+});
 
-osmSettingsIcon.addEventListener('click', () => {
-    osmSettings.classList.toggle('active');
-})
+osmStatsIcon.addEventListener('click', function() {
+    menuToggle(osmStats);
+});
+
+osmSettingsIcon.addEventListener('click', function() {
+    menuToggle(osmSettings);
+});
 
 //FUNCTIONS
 
-//currently unused/in progress
-function menuToggle (toToggle) {
+function menuToggle(toToggle) {
     for(var i = 0; i < toggleList.length; i++) {
-        if(toToggle != toggleList[i]) {
-            if(toggleDict[toggleList[i]] == true) {
+        if(toToggle == toggleList[i]) {
+            toToggle.classList.toggle('active');
+            toggleDict.set(toToggle, !toggleDict.get(toToggle));
+        } else {
+            if(toggleDict.get(toggleList[i]) == true) {
                 toggleList[i].classList.toggle('active');
-                toggleDict[toggleList[i]] = !toggleDict[toggleList[i]];
+                toggleDict.set(toggleList[i], !toggleDict.get(toggleList[i]));
             }
         }
     }
-    toToggle.classList.toggle('active');
-    toggleDict[toToggle] = !toggleDict[toToggle];
 }
