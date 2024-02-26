@@ -1,3 +1,7 @@
+body {
+    overflow-y: hidden;
+}
+
 .header {
     background-color: darkcyan;
     width: 100vw;
@@ -68,8 +72,7 @@
 
 .osm-rules {
     background-color: aqua;
-    margin: auto;
-    width: 30%;
+    width: 40%;
     min-width: 21rem;
     height: auto;
     max-height: 80vh;
@@ -83,7 +86,6 @@
     transition: 0.3s ease;
 }
 
-
 @media only screen and (max-width: 1024px) {
     .osm-rules {
         width: 50%
@@ -95,10 +97,10 @@
     top: 20vh;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* SETTINGS OSM STYLES */
+
+.theme-option {
+    display: block;
 }
 
 .fa-bars, .fa-circle-question, .fa-chart-bar, .fa-gear {
@@ -109,6 +111,41 @@ ul {
     text-align: center;
 }
 
-.theme-option {
-    display: block;
+.game-box {
+    background-color: palegreen;
+    width: 30%;
+    min-width: 21rem;
+    height: auto;
+    padding: 0.5rem;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    top: 15vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.3s ease;
+}
+
+#input-color, #target-color {
+    background-color: darkgreen;
+    width: 100rem;
+    height: 50px;
+    border-radius: 3px;
+    position: relative;
+}
+
+#target-color{
+    float: right;
+}
+
+.letter-grid {
+    width: 100%;
+    display: grid;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
