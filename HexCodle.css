@@ -127,21 +127,8 @@ body {
     transition: 0.3s ease;
 }
 
-#input-color, #target-color {
-    background-color: darkgreen;
-    width: 100rem;
-    height: 50px;
-    border-radius: 3px;
-    position: relative;
-}
-
-#target-color{
-    float: right;
-}
-
 .letter-grid {
-    width: 100%;
-    display: grid;
+    /* TBD */
 }
 
 ul {
