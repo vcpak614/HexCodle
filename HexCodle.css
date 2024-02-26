@@ -20,7 +20,8 @@
     min-width: 2.5rem;
     height: 2.5rem;
     margin: 0.4rem;
-    padding :0.2rem;
+    padding: 0.2rem;
+    padding-top: 0.36rem;
     border-radius: 3px;
     box-sizing: border-box;
     float: right;
@@ -98,6 +99,14 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.fa-bars, .fa-circle-question, .fa-chart-bar, .fa-gear {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.7rem;
+    text-align: center;
 }
 
 .theme-option {
