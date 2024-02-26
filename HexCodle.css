@@ -17,9 +17,12 @@
 .osm-main-icon, .osm-stats-icon, .osm-rules-icon, .osm-settings-icon {
     background-color: aqua;
     width: 2.5rem;
+    min-width: 2.5rem;
     height: 2.5rem;
     margin: 0.4rem;
+    padding :0.2rem;
     border-radius: 3px;
+    box-sizing: border-box;
     float: right;
 }
 
@@ -60,6 +63,35 @@
 
 .osm-main.active {
     left: 0px;
+}
+
+.osm-rules {
+    background-color: aqua;
+    margin: auto;
+    width: 30%;
+    min-width: 21rem;
+    height: auto;
+    max-height: 80vh;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 3px;
+    opacity: 0;
+    box-sizing: border-box;
+    position: relative;
+    top: 40vh;
+    transition: 0.3s ease;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .osm-rules {
+        width: 50%
+    }
+}
+
+.osm-rules.active {
+    opacity: 100;
+    top: 20vh;
 }
 
 ul {

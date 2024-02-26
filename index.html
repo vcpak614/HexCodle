@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="HexCodle.css">
+    <script src="https://kit.fontawesome.com/5964d931e5.js" crossorigin="anonymous"></script>
+
+    <!-- FONT -->
+
     <title>HexCodle</title>
 </head>
 <body>
@@ -16,14 +20,11 @@
             </ul>
         </div>
         <div class="osm-main-icon">
-
+            <i class="fa-solid fa-bars"></i>
         </div>
         <h1 class="page-title">HexCodle</h1>
-        <div class="osm-rules">
-
-        </div>
         <div class="osm-rules-icon">
-            
+            <i class="fa-solid fa-circle-question"></i>
         </div>
         <div class="osm-stats">
             <div class="stats-header">
@@ -42,7 +43,7 @@
             </div>
         </div>
         <div class="osm-stats-icon">
-
+            <i class="fa-solid fa-chart-bar"></i>
         </div>
         <div class="osm-settings">
             <p>Theme:</p>
@@ -62,8 +63,18 @@
             </form>
         </div>
         <div class="osm-settings-icon">
-
+            <i class="fa-solid fa-gear"></i>
         </div>
+    </div>
+    <div class="osm-rules">
+        <h2 style="margin-top: 0;">Rules:</h2>
+        <p>You will have 6 attempts to guess a hexadecimal code for the given color.</p>
+        <p>After submitting a guess, if a square turns yellow, it means that you have used a correct character, but it is in the wrong position. </p>
+        <p>If a square turns green, the character is in the correct position.</p>
+        <p>If a square is grey, the character you have used in not in the code at all.</p>
+    </div>
+    <div class="game-box">
+
     </div>
     <script src="HexCodle.js"></script>
 </body>

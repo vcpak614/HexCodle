@@ -24,11 +24,6 @@ var toggleDict = new Map([
     [osmSettings, settingsToggle]
 ])
 
-console.log(toggleDict.get(osmMain));
-console.log(toggleDict.get(osmRules));
-console.log(toggleDict.get(osmStats));
-console.log(toggleDict.get(osmSettings));
-
 //FUNCTIONALITY
 
 osmMainIcon.addEventListener('click', function() {
