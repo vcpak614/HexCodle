@@ -1,5 +1,5 @@
 // VARIABLES
-
+    //MENU VARS.:
 const osmMain = document.querySelector('.osm-main');
 const osmMainIcon = document.querySelector('.osm-main-icon');
 var mainToggle = false;
@@ -23,6 +23,9 @@ var toggleDict = new Map([
     [osmStats, statsToggle],
     [osmSettings, settingsToggle]
 ])
+
+    //GAME VARS.:
+    //TBD
 
 //FUNCTIONALITY
 

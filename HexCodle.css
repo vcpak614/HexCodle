@@ -113,9 +113,9 @@ body {
 
 .game-box {
     background-color: palegreen;
-    width: 30%;
+    width: fit-content;
     min-width: 21rem;
-    height: auto;
+    height: fit-content;
     padding: 0.5rem;
     border-radius: 3px;
     box-sizing: border-box;
@@ -127,8 +127,24 @@ body {
     transition: 0.3s ease;
 }
 
+/* COLORS TBD */
+
 .letter-grid {
-    /* TBD */
+    background-color: cadetblue;
+    height: 420px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    border: 2px solid;
+    width: 60px;
+    height: 60px;
+    margin: 2.5px;
+    font-size: 36px;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
